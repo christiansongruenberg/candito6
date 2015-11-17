@@ -1,0 +1,298 @@
+/* line 3, C:/xampp/htdocs/introToLaravel/public/scss/_navbar.scss */
+.button_container {
+  position: absolute;
+  top: 15px;
+  right: 2%;
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 200;
+  transition: opacity 0.25s ease; }
+  /* line 13, C:/xampp/htdocs/introToLaravel/public/scss/_navbar.scss */
+  .button_container:hover {
+    opacity: 0.7; }
+  /* line 18, C:/xampp/htdocs/introToLaravel/public/scss/_navbar.scss */
+  .button_container.activeButton .top {
+    transform: translateY(11px) translateX(0) rotate(45deg);
+    background-color: darkorange; }
+  /* line 22, C:/xampp/htdocs/introToLaravel/public/scss/_navbar.scss */
+  .button_container.activeButton .middle {
+    opacity: 0; }
+  /* line 26, C:/xampp/htdocs/introToLaravel/public/scss/_navbar.scss */
+  .button_container.activeButton .bottom {
+    transform: translateY(-11px) translateX(0) rotate(-45deg);
+    background-color: darkorange; }
+
+/* line 34, C:/xampp/htdocs/introToLaravel/public/scss/_navbar.scss */
+.button_container span {
+  background: white;
+  border: none;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.35s ease;
+  cursor: pointer; }
+
+/* line 46, C:/xampp/htdocs/introToLaravel/public/scss/_navbar.scss */
+.button_container .middle {
+  top: 11px; }
+
+/* line 50, C:/xampp/htdocs/introToLaravel/public/scss/_navbar.scss */
+.button_container .bottom {
+  top: 22px; }
+
+/* line 3, C:/xampp/htdocs/introToLaravel/public/scss/_overlayMenu.scss */
+#overlayMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  background: black;
+  z-index: 100;
+  text-align: center;
+  overflow: hidden;
+  transition: opacity 0.35s, visibility 0.35s, height 1s; }
+  /* line 17, C:/xampp/htdocs/introToLaravel/public/scss/_overlayMenu.scss */
+  #overlayMenu nav {
+    position: relative;
+    height: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center; }
+  /* line 25, C:/xampp/htdocs/introToLaravel/public/scss/_overlayMenu.scss */
+  #overlayMenu.menuOpen {
+    opacity: 0.95;
+    visibility: visible;
+    height: 100%; }
+    /* line 30, C:/xampp/htdocs/introToLaravel/public/scss/_overlayMenu.scss */
+    #overlayMenu.menuOpen li {
+      padding-left: 8px;
+      text-align: left;
+      border-top: 2px solid #3B3B3B;
+      animation: fadeInRight 0.5s ease forwards;
+      animation-delay: .35s;
+      text-transform: uppercase;
+      display: block;
+      height: 25%;
+      height: calc(100%/4);
+      min-height: 50px;
+      position: relative;
+      opacity: 0;
+      font-weight: bolder;
+      font-size: 50px;
+      color: #6B6B6B;
+      letter-spacing: 5px; }
+      /* line 37, C:/xampp/htdocs/introToLaravel/public/scss/_overlayMenu.scss */
+      #overlayMenu.menuOpen li:nth-of-type(2) {
+        animation-delay: .4s; }
+      /* line 41, C:/xampp/htdocs/introToLaravel/public/scss/_overlayMenu.scss */
+      #overlayMenu.menuOpen li:nth-of-type(3) {
+        animation-delay: .45s; }
+      /* line 44, C:/xampp/htdocs/introToLaravel/public/scss/_overlayMenu.scss */
+      #overlayMenu.menuOpen li:nth-of-type(4) {
+        animation-delay: .50s; }
+      /* line 60, C:/xampp/htdocs/introToLaravel/public/scss/_overlayMenu.scss */
+      #overlayMenu.menuOpen li:hover {
+        color: whitesmoke;
+        transition: .35s ease;
+        border-top: 2px solid darkorange;
+        cursor: pointer; }
+  /* line 69, C:/xampp/htdocs/introToLaravel/public/scss/_overlayMenu.scss */
+  #overlayMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%; }
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%; }
+  100% {
+    opacity: 1;
+    left: 0; } }
+
+/* line 4, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+html {
+  overflow-y: scroll; }
+
+/* line 8, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+.banner {
+  background-color: darkorange;
+  padding: 5px; }
+
+/* line 14, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+.main-container {
+  margin-top: 5px; }
+
+/* line 17, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+.title {
+  margin: 0;
+  color: white;
+  font-family: 'Nixie One', Cursive;
+  letter-spacing: 3px; }
+
+/* line 24, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+.subtitle {
+  color: black;
+  margin: 0;
+  font-family: 'Nixie One', Cursive;
+  letter-spacing: 0px; }
+
+/* line 31, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+.greeting {
+  font-family: 'Nixie One', Cursive; }
+
+/* line 35, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+body, input, textarea {
+  font-family: 'Open Sans', sans-serif; }
+
+/* line 39, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  /*color: white;
+    background-color: black;*/ }
+
+/* line 45, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+.lift-input {
+  /*display: inline-block;*/
+  padding: 0px;
+  border: none;
+  border-bottom: solid 1px;
+  transition: border 0.3s;
+  /*    text-align: center;*/ }
+
+/* line 54, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+.lift-input:focus, lift-input.focus {
+  border-bottom: solid 1px orange;
+  outline: none; }
+
+/* line 59, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+h3 {
+  text-align: center; }
+
+/* line 63, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+#dateInput {
+  box-sizing: border-box;
+  height: 24px;
+  font-family: sans-serif; }
+
+/* line 69, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+table {
+  margin: auto; }
+
+/* line 74, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+.input-description {
+  text-align: right;
+  text-transform: uppercase; }
+
+/* line 80, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+.input-column {
+  text-align: center; }
+
+/* line 84, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+.input-column select, .input-column #dateInput {
+  width: 100%; }
+
+/* line 88, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+td {
+  padding: 6px;
+  text-align: center; }
+
+/* line 93, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+.unitsSpan {
+  display: inline-block;
+  float: right;
+  position: absolute; }
+
+/* line 99, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+.main-content {
+  padding: 0; }
+
+/* line 103, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+.nav-div {
+  padding: 0; }
+
+/* line 107, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+#nav-list {
+  list-style: none; }
+
+/* line 112, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+ul {
+  padding: 0;
+  margin: 0; }
+
+/* line 117, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+#nav-list li {
+  width: 100%;
+  /*    padding: 0px;*/
+  text-align: center;
+  color: white;
+  /*    background: black;*/
+  margin-bottom: 5px;
+  font-family: 'Lato', sans-serif; }
+
+/* line 127, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+#nav-list .btn {
+  width: 100%;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background-color: white;
+  border: 0;
+  padding: 10px 0;
+  color: black; }
+
+/* line 138, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+.date-header {
+  text-align: center;
+  letter-spacing: 5px; }
+
+/* line 143, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+.weekTitle {
+  text-align: center;
+  font-family: 'Lato', sans-serif; }
+
+/* line 148, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+.workoutContent {
+  padding: 0;
+  border-left: 1px solid transparent; }
+
+/* line 154, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+.workout-table td {
+  padding: 10px; }
+
+/* line 158, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+.workoutCell {
+  font-weight: bold;
+  text-align: right; }
+
+/* line 163, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 140, 0, 0), rgba(255, 140, 0, 0.75), rgba(255, 140, 0, 0)); }
+
+/* line 169, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+.badge {
+  background-color: darkorange; }
+
+/* line 173, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+.set-header {
+  font-weight: bold;
+  text-align: center; }
+
+/* line 178, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+.navHR {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.65), black); }
+
+/*# sourceMappingURL=main.css.map */

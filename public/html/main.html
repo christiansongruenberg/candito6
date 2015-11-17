@@ -1,0 +1,85 @@
+
+<!--<div ng-show="name">
+    <h1 class="greeting">Welcome {{name}}</h1> <input ng-click="logout()" type="button" style="border-radius: 0" class="logout btn btn-danger" value="Logout">
+</div>-->
+<h3>Complete the fields below. Your workouts will automatically formulate.</h2>
+<div class="col-xs-10 main-content">
+   <table id="input-table">
+        <tr>
+            <td class="input-description">Starting Date:</td>
+            <td class="input-column"><input placeholder="dd/mm/yyy" id="dateInput" type="date"></td>
+        </tr>
+        <tr>
+            <td class="input-description">Weight System:</td>
+            <td class="input-column">
+                <label>lbs<input ng-model="units" type="radio" name="units" value="lbs"></label> 
+                <label>kgs<input ng-model="units" type="radio" name="units" value="kgs"></label>
+            </td>
+        </tr>
+        <tr>
+            <td class="input-description">Bench Press:</td>
+            <td class="input-column"><input class="lift-input" type="text" ng-model="lifts.benchPress"><span ng-bind="units" class="unitsSpan"></span></td>
+        </tr>
+        <tr>
+            <td class="input-description">Squat:</td>
+            <td class="input-column"><input class="lift-input" type="text" ng-model="lifts.squat"><span ng-bind="units" class="unitsSpan"></span></td>
+        </tr>
+        <tr>
+            <td class="input-description">Deadlift:</td>
+            <td class="input-column"><input class="lift-input" type="text" ng-model="lifts.deadlift"><span ng-bind="units" class="unitsSpan"></span></td>
+        </tr>
+        <tr>
+            <td class="input-description">Upper Back Exercise #1: </td>
+            <td class="input-column">
+                <select ng-model="backEx1" name="" id="">
+                    <option value="Dumbbell Row">Dumbbell Row</option>
+                    <option value="Barbell Row">Barbell Row</option>
+                    <option value="Machine Row">Machine Row</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="input-description">Shoulder Exercise:</td>
+            <td class="input-column">
+                <select ng-model="shoulderEx" name="" id="">
+                    <option value="Seated Dumbbell OHP">Seated Dumbbell OHP</option>
+                    <option value="Standing Dumbbell OHP">Standing Dumbbell OHP</option>        
+                    <option value="Military Press">Military Press</option>
+                    <option value="Lateral Dumbell Raise">Lateral Dumbell Raise</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="input-description">Upper Back Exercise #1: </td>
+            <td class="input-column">
+                <select ng-model="backEx2" name="" id="">
+                    <option value="Weighted Pull-up">Weighted Pull-up</option>
+                    <option value="Weighted Chin-up">Weighted Chin-up</option>
+                    <option value="Lat Pulldown">Lat Pulldown</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button class=btn btn-warning ng-click="saveUserData()">Save Data</button></td>
+        </tr>
+    </table> 
+</div>
+
+ 
+  <!--move the signup/login to a seperate page
+      or possibly a popup before the page opens
+  -->
+<!--
+<form ng-hide="name" ng-submit="signIn()">
+    <h3>Log In</h3>
+    <label for="email">Email</label><br>
+    <input ng-model="email" id="email" type="email" name="email"><br>
+    <label for="password">Password</label><br>
+    <input ng-model="password" id="password" type="password" name="password">
+    <br><br>
+    <p ng-if="loginErrorMessage">{{loginErrorMessage}}</p>
+    <input class="btn btn-success" style="border-radius: 0" type="submit" value="Login">
+    <input class="btn btn-primary" style="border-radius: 0" type="button" value="Sign Up">
+</form>
+-->

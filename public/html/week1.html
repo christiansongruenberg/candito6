@@ -1,0 +1,303 @@
+
+<div class="workoutContent col-xs-10">   
+   <h1 class="weekTitle">Week 1 - Muscular Conditioning (w/ Moderate Difficulty)</h1>
+    <div class="dayDiv" id="w1d1">
+        <h2 class="date-header">{{ad(startingDate,0) | date: 'mediumDate'}} </h2>
+        <table class="workout-table">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="set-header">Set 1</td>
+                <td class="set-header">Set 2</td>
+                <td class="set-header">Set 3</td>
+                <td class="set-header">Set 4</td>
+            </tr>
+            <tr>
+                <td><span class="badge">1</span></td>
+                <td class="workoutCell">Squat</td>
+                <td><span class="warmUp">Warm Up</span></td>
+                <td>{{par(squat, 80)}}<span class="repSpan">x6</span></td>
+                <td>{{par(squat, 80)}}<span class="repSpan">x6</span></td>
+                <td>{{par(squat, 80)}}<span class="repSpan">x6</span></td>
+                <td>{{par(squat, 80)}}<span class="repSpan">x6</span></td>
+            </tr>
+            <tr>
+                <td><span class="badge">2</span></td>
+                <td class="workoutCell">Deadlift</td>
+                <td><span class="warmUp">Warm Up</span></td>
+                <td>{{par(deadlift, 80)}}<span class="repSpan">x6</span></td>
+                <td>{{par(deadlift, 80)}}<span class="repSpan">x6</span></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span class="badge">3</span></td>
+                <td class="workoutCell">Optional Exercise 1</td>
+                <td><span class="warmUp">Warm Up</span></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span class="badge">4</span></td>
+                <td class="workoutCell">Optional Exercise 2</td>
+                <td><span class="warmUp">Warm Up</span></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <div class="dayDiv" id="w1d2">
+        <h2 class="date-header">{{ad(startingDate,1) | date: 'mediumDate'}}</h2>
+        <table class="workout-table">
+            <tr>
+                <td><span class="badge"></span></td>
+                <td></td>
+                <td></td>
+                <td class="set-header">Set 1</td>
+                <td class="set-header">Set 2</td>
+                <td class="set-header">Set 3</td>
+                <td class="set-header">Set 4</td>
+            </tr>
+            <tr>
+                <td><span class="badge">1</span></td>
+                <td class="workoutCell">Bench Press</td>
+                <td>Warm Up</td>
+                <td>{{par(benchPress,50)}}<span class="repSpan">x10</span></td>
+                <td>{{par(benchPress,70)}}<span class="repSpan">x10</span></td>
+                <td>{{par(benchPress,75)}}<span class="repSpan">x8</span></td>
+                <td>{{par(benchPress,80)}}<span class="repSpan">x6</span></td>
+            </tr>
+            <tr>
+                <td><span class="badge">2</span></td>
+                <td class="workoutCell">{{backEx1}}</td>
+                <td>Warm Up</td>
+                <td><span class="accReps">10 reps</span></td>
+                <td><span class="accReps">10 reps</span></td>
+                <td><span class="accReps">8 reps</span></td>
+                <td><span class="accReps">6 reps</span></td>
+            </tr>
+            <tr>
+                <td><span class="badge">3</span></td>
+                <td class="workoutCell">{{shoulderEx}}</td>
+                <td><span class="warmUp">Warm Up</span></td>
+                <td><span class="accReps">12 reps</span></td>
+                <td><span class="accReps">12 reps</span></td>
+                <td><span class="accReps">10 reps</span></td>
+                <td><span class="accReps">8 reps</span></td>
+            </tr>
+            <tr>
+                <td><span class="badge">4</span></td>
+                <td class="workoutCell">{{backEx2}}</td>
+                <td><span class="warmUp">Warm Up</span></td>
+                <td><span class="accReps">12 reps</span></td>
+                <td><span class="accReps">12 reps</span></td>
+                <td><span class="accReps">10 reps</span></td>
+                <td><span class="accReps">8 reps</span></td>
+            </tr>
+            <tr>
+                <td><span class="badge">5</span></td>
+                <td class="workoutCell">Optional Exercise 1</td>
+                <td><span class="warmUp">Warm Up</span></td>
+                <td><span class="accReps">8 - 12 reps</span></td>
+                <td><span class="accReps">8 - 12 reps</span></td>
+                <td><span class="accReps">8 - 12 reps</span></td>
+            </tr>
+            <tr>
+                <td><span class="badge">6</span></td>
+                <td class="workoutCell">Optional Exercise 2</td>
+                <td><span class="warmUp">Warm Up</span></td>
+                <td><span class="accReps">8 - 12 reps</span></td>
+                <td><span class="accReps">8 - 12 reps</span></td>
+                <td><span class="accReps">8 - 12 reps</span></td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <div class="dayDiv" id="w1d3">
+        <h2 class="date-header">{{ad(startingDate,3) | date: 'mediumDate'}} </h2>
+        <table class="workout-table">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="set-header">Set 1</td>
+                <td class="set-header">Set 2</td>
+                <td class="set-header">Set 3</td>
+                <td class="set-header">Set 4</td>
+            </tr>
+            <tr>
+                <td><span class="badge">1</span></td>
+                <td class="workoutCell">Bench Press</td>
+                <td>Warm Up</td>
+                <td>{{par(benchPress,50)}}<span class="repSpan">x10</span></td>
+                <td>{{par(benchPress,70)}}<span class="repSpan">x10</span></td>
+                <td>{{par(benchPress,75)}}<span class="repSpan">x8</span></td>
+                <td>{{par(benchPress,80)}}<span class="repSpan">x6</span></td>
+            </tr>
+            <tr>
+                <td><span class="badge">2</span></td>
+                <td class="workoutCell">{{backEx1}}</td>
+                <td>Warm Up</td>
+                <td><span class="accReps">10 reps</span></td>
+                <td><span class="accReps">10 reps</span></td>
+                <td><span class="accReps">8 reps</span></td>
+                <td><span class="accReps">6 reps</span></td>
+            </tr>
+            <tr>
+                <td><span class="badge">3</span></td>
+                <td class="workoutCell">{{shoulderEx}}</td>
+                <td><span class="warmUp">Warm Up</span></td>
+                <td><span class="accReps">12 reps</span></td>
+                <td><span class="accReps">12 reps</span></td>
+                <td><span class="accReps">10 reps</span></td>
+                <td><span class="accReps">8 reps</span></td>
+            </tr>
+            <tr>
+                <td><span class="badge">4</span></td>
+                <td class="workoutCell">{{backEx2}}</td>
+                <td><span class="warmUp">Warm Up</span></td>
+                <td><span class="accReps">12 reps</span></td>
+                <td><span class="accReps">12 reps</span></td>
+                <td><span class="accReps">10 reps</span></td>
+                <td><span class="accReps">8 reps</span></td>
+            </tr>
+            <tr>
+                <td><span class="badge">5</span></td>
+                <td class="workoutCell">Optional Exercise 1</td>
+                <td><span class="warmUp">Warm Up</span></td>
+                <td><span class="accReps">8 - 12 reps</span></td>
+                <td><span class="accReps">8 - 12 reps</span></td>
+                <td><span class="accReps">8 - 12 reps</span></td>
+            </tr>
+            <tr>
+                <td><span class="badge">6</span></td>
+                <td class="workoutCell">Optional Exercise 2</td>
+                <td><span class="warmUp">Warm Up</span></td>
+                <td><span class="accReps">8 - 12 reps</span></td>
+                <td><span class="accReps">8 - 12 reps</span></td>
+                <td><span class="accReps">8 - 12 reps</span></td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <div class="dayDiv" id="w1d4">
+        <h2 class="date-header">{{ad(startingDate,4) | date: 'mediumDate'}}</h2>
+        <table class="workout-table">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="set-header">Set 1</td>
+                <td class="set-header">Set 2</td>
+                <td class="set-header">Set 3</td>
+                <td class="set-header">Set 4</td>
+            </tr>
+            <tr>
+                <td><span class="badge">1</span></td>
+                <td class="workoutCell">Squat</td>
+                <td>Warm Up</td>
+                <td>{{par(squat, 70)}}<span class="repSpan">x8</span></td>
+                <td>{{par(squat, 70)}}<span class="repSpan">x8</span></td>
+                <td>{{par(squat, 70)}}<span class="repSpan">x8</span></td>
+                <td>{{par(squat, 70)}}<span class="repSpan">x8</span></td>
+            </tr>
+            <tr>
+                <td><span class="badge">2</span></td>
+                <td class="workoutCell">Deadlift</td>
+                <td>Warm Up</td>
+                <td>{{par(deadlift, 70)}}<span class="repSpan">x8</span></td>
+                <td>{{par(deadlift, 70)}}<span class="repSpan">x8</span></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span class="badge">3</span></td>
+                <td class="workoutCell">Optional Exercise 1</td>
+                <td><span class="warmUp">Warm Up</span></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span class="badge">4</span></td>
+                <td class="workoutCell">Optional Exercise 2</td>
+                <td><span class="warmUp">Warm Up</span></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <div class="dayDiv" id="w1d3">
+        <h2 class="date-header">{{ad(startingDate,5) | date: 'mediumDate'}}</h2>
+        <table class="workout-table">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="set-header">Set 1</td>
+                <td class="set-header">Set 2</td>
+                <td class="set-header">Set 3</td>
+                <td class="set-header">Set 4</td>
+            </tr>
+            <tr>
+                <td><span class="badge">1</span></td>
+                <td class="workoutCell">Bench Press</td>
+                <td>Warm Up</td>
+                <td>{{par(benchPress,80)}}<span class="repSpan">xMax Reps</span></td>
+            </tr>
+            <tr>
+                <td><span class="badge">2</span></td>
+                <td class="workoutCell">{{backEx1}}</td>
+                <td>Warm Up</td>
+                <td><span class="accReps">10 reps</span></td>
+                <td><span class="accReps">10 reps</span></td>
+                <td><span class="accReps">8 reps</span></td>
+                <td><span class="accReps">6 reps</span></td>
+            </tr>
+            <tr>
+                <td><span class="badge">3</span></td>
+                <td class="workoutCell">{{shoulderEx}}</td>
+                <td><span class="warmUp">Warm Up</span></td>
+                <td><span class="accReps">12 reps</span></td>
+                <td><span class="accReps">12 reps</span></td>
+                <td><span class="accReps">10 reps</span></td>
+                <td><span class="accReps">8 reps</span></td>
+            </tr>
+            <tr>
+                <td><span class="badge">4</span></td>
+                <td class="workoutCell">{{backEx2}}</td>
+                <td><span class="warmUp">Warm Up</span></td>
+                <td><span class="accReps">12 reps</span></td>
+                <td><span class="accReps">12 reps</span></td>
+                <td><span class="accReps">10 reps</span></td>
+                <td><span class="accReps">8 reps</span></td>
+            </tr>
+            <tr>
+                <td><span class="badge">5</span></td>
+                <td class="workoutCell">Optional Exercise 1</td>
+                <td><span class="warmUp">Warm Up</span></td>
+                <td><span class="accReps">8 - 12 reps</span></td>
+                <td><span class="accReps">8 - 12 reps</span></td>
+                <td><span class="accReps">8 - 12 reps</span></td>
+            </tr>
+            <tr>
+                <td><span class="badge">6</span></td>
+                <td class="workoutCell">Optional Exercise 2</td>
+                <td><span class="warmUp">Warm Up</span></td>
+                <td><span class="accReps">8 - 12 reps</span></td>
+                <td><span class="accReps">8 - 12 reps</span></td>
+                <td><span class="accReps">8 - 12 reps</span></td>
+            </tr>
+        </table>
+    </div>    
+</div>

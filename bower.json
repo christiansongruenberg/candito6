@@ -1,0 +1,22 @@
+{
+  "name": "introToLaravel",
+  "version": "0.0.0",
+  "homepage": "https://github.com/christiansongruenberg/introToLaravel",
+  "authors": [
+    "christiansongruenberg <christianson.gruenberg@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-route": "~1.4.7",
+    "bootstrap": "~3.3.5",
+    "moment": "~2.10.6"
+  }
+}

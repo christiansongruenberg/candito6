@@ -1,0 +1,184 @@
+@import "navbar";
+@import "overlayMenu";
+
+html {
+    overflow-y: scroll;
+}
+
+.banner {
+    background-color: darkorange;
+    padding: 5px;
+    
+}
+
+.main-container {
+    margin-top: 5px;
+}
+.title {
+    margin: 0;
+    color: white;    
+    font-family: 'Nixie One', Cursive;
+    letter-spacing: 3px;
+}
+
+.subtitle {
+    color: black;
+    margin: 0;
+    font-family: 'Nixie One', Cursive;
+    letter-spacing: 0px;
+}
+
+.greeting {
+    font-family: 'Nixie One', Cursive;
+} 
+
+body, input, textarea {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    /*color: white;
+    background-color: black;*/
+}
+
+.lift-input {
+    /*display: inline-block;*/
+    padding: 0px;
+    border: none;
+    border-bottom: solid 1px;
+    transition: border 0.3s;
+/*    text-align: center;*/
+
+}
+.lift-input:focus, lift-input.focus{
+    border-bottom: solid 1px orange;
+    outline:none;
+}
+
+h3 {
+    text-align: center;
+}
+
+#dateInput {
+    box-sizing: border-box;
+    height: 24px;
+    font-family: sans-serif;
+}
+
+table {
+    margin: auto;
+
+}
+
+.input-description {
+    text-align: right;
+    text-transform: uppercase;
+    
+}
+
+.input-column {
+    text-align: center;
+}
+
+.input-column select, .input-column #dateInput{
+    width: 100%;
+}
+
+td {
+    padding: 6px;
+    text-align: center;
+}
+
+.unitsSpan {
+    display: inline-block;
+    float:right;
+    position: absolute;
+}
+
+.main-content {
+    padding: 0;
+}
+
+.nav-div {
+    padding: 0;
+}
+
+#nav-list{
+    list-style: none;
+    
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+#nav-list li {
+    width: 100%;
+/*    padding: 0px;*/
+    text-align: center;
+    color: white;
+/*    background: black;*/
+    margin-bottom: 5px;
+    font-family: 'Lato', sans-serif;
+}
+
+#nav-list .btn {
+    width: 100%;
+    border-radius: 0;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background-color: white;
+    border: 0;
+    padding: 10px 0;
+    color: black;
+}
+
+.date-header {
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.weekTitle {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.workoutContent {
+    padding: 0;
+    border-left:1px solid rgba(0, 0, 0, 0);
+
+}
+
+.workout-table td{
+    padding: 10px;
+}
+
+.workoutCell {
+    font-weight:bold;
+    text-align: right;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 140, 0, 0), rgba(255, 140, 0, 0.75), rgba(255, 140, 0, 0));
+}
+
+.badge {
+    background-color: darkorange;
+}
+
+.set-header {
+    font-weight: bold;
+    text-align: center;
+}
+
+.navHR {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 1));
+}
+
+

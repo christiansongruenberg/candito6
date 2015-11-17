@@ -1,0 +1,52 @@
+$active-hamburger: darkorange;
+
+.button_container {
+    position: absolute;
+    top: 15px;
+    right: 2%;
+    height: 27px;
+    width: 35px;
+    cursor: pointer;
+    z-index: 200;
+    transition: opacity .25s ease;
+    
+    &:hover {
+        opacity: 0.7;
+    }
+    
+    &.activeButton {
+        .top {
+            transform: translateY(11px) translateX(0) rotate(45deg);
+            background-color: $active-hamburger;
+        }
+        .middle {
+            opacity: 0;
+        }
+    
+        .bottom {
+            transform: translateY(-11px) translateX(0) rotate(-45deg);
+            background-color: $active-hamburger;
+        }
+    }
+    
+}
+            
+.button_container span {
+    background: white;
+    border: none;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .35s ease;
+    cursor: pointer;
+}
+
+.button_container .middle {
+     top: 11px;
+ }
+
+.button_container .bottom{
+     top: 22px;
+ }
