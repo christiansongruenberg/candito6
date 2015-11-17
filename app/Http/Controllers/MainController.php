@@ -20,16 +20,16 @@ class MainController extends BaseController
         return view('index');
     }
 
-//    public function getUser(Request $request){
-//        $userVar = $request->user();
-//        return response()->json($request->user());
-//    }
-//
-//    public function updateUserInfo(Request $request){
-//        $input = $request->all();
-//        $value = $input['benchPress'];
-//        dd($input['benchPress']);
-//    }
+    public function getUser(Request $request){
+        $userVar = $request->user();
+        return response()->json($request->user());
+    }
+
+    public function updateUserInfo(Request $request){
+        $input = $request->all();
+        $value = $input['benchPress'];
+        dd($input['benchPress']);
+    }
 
     public function showAbout(){
         return 'NEW ABOUT PAGE';

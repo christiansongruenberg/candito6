@@ -15,7 +15,7 @@ use Illuminate\Contracts\Logging\Log;
 Route::get('/','MainController@index');
 
 //returns the user information to populate the Input Page
-/*Route::get('getUser', 'MainController@getUser');
+Route::get('getUser', 'MainController@getUser');
 
 //
 Route::post('updateUserInfo', 'MainController@updateUserInfo');
@@ -27,7 +27,7 @@ Route::get('auth/logout', 'Auth\AuthController@getLogout');
 
 //Rgistration routes
 Route::get('auth/register', 'Auth\AuthController@getRegister');
-Route::post('auth/register', 'Auth\AuthController@postRegister');*/
+Route::post('auth/register', 'Auth\AuthController@postRegister');
 
 Route::controllers([
     'password' => 'Auth\PasswordController',
