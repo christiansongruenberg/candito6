@@ -4,7 +4,7 @@
 
 angular.module('mainCtrl', [])
 
-.controller('mainController', function($scope, $http, $log, canditoService){
+.controller('mainController', function($scope, $http, $log, canditoService, $timeout){
         
     $scope.saveUserData = function(){
         
@@ -100,6 +100,17 @@ angular.module('mainCtrl', [])
     }
     /*canditoService.units = $scope.units;
     $log.log('candito units set to: ' + canditoService.units);*/
+    $timeout(function () {
+        (function($, viewport){
+            $(document).ready(function() {
+                // Executes in SM, MD and LG breakpoints
+                if(viewport.is('<=sm')) {
+                    $('.container').addClass('container-fluid').removeClass('container')
+                    $('#nav-list').removeClass('in');
+                }
+            });
+        })(jQuery, ResponsiveBootstrapToolkit);
+    });
 })
 
 .controller('weekController', function($scope, $http, $log, canditoService){
@@ -121,8 +132,7 @@ angular.module('mainCtrl', [])
     $scope.backEx2 = "Weighted Pull-up";
     $scope.shoulderEx = "Seated Dumbbell OHP";*/
 })
-.controller('parentController', function($scope,$log){
-    $log.log('parent controller working :S');
+.controller('parentController', function($scope,$log, $timeout){
     $scope.menuActive = false;
     
     $scope.menuClick = function(){
@@ -133,4 +143,5 @@ angular.module('mainCtrl', [])
             $scope.menuActive = false
         }
     }
+    
 });

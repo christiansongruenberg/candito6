@@ -36,14 +36,15 @@
 
 <script src="bower/moment/moment.js"></script>
 <script src="bower/jquery/dist/jquery.js"></script>
+<script src="/bower/bootstrap/dist/js/bootstrap.js"></script>
 <script src="bower/angular/angular.js"></script>
 <script src="bower/angular-route/angular-route.js"></script><!-- load angular -->
 
+<script src="bower/responsive-bootstrap-toolkit/dist/bootstrap-toolkit.js"></script>
 <script src="js/controllers/mainCtrl.js"></script>
 <script src="js/services/canditoService.js"></script>
 <script src="js/directives/directives.js"></script>
 <script src="js/app.js"></script>
-<script src="bower/responsive-bootstrap-toolkit/dist/bootstrap-toolkit.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
