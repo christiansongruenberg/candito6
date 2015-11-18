@@ -1,10 +1,10 @@
-/* line 1, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
+/* line 3, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
 .banner {
   background-color: darkorange;
   padding: 5px;
   height: 6em; }
 
-/* line 7, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
+/* line 9, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
 .title {
   margin: 0;
   color: white;
@@ -12,7 +12,7 @@
   letter-spacing: 3px;
   font-size: 3em; }
 
-/* line 15, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
+/* line 17, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
 .subtitle {
   color: black;
   margin: 0;
@@ -20,7 +20,7 @@
   letter-spacing: 0px;
   font-size: 1.3em; }
 
-/* line 25, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
+/* line 27, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
 .button_container {
   position: absolute;
   top: 1.5em;
@@ -30,22 +30,22 @@
   cursor: pointer;
   z-index: 200;
   transition: opacity 0.25s ease; }
-  /* line 35, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
+  /* line 37, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
   .button_container:hover {
     opacity: 0.7; }
-  /* line 40, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
+  /* line 42, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
   .button_container.activeButton .top {
     transform: translateY(1em) translateX(0) rotate(45deg);
     background-color: darkorange; }
-  /* line 44, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
+  /* line 46, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
   .button_container.activeButton .middle {
     opacity: 0; }
-  /* line 48, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
+  /* line 50, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
   .button_container.activeButton .bottom {
     transform: translateY(-1em) translateX(0) rotate(-45deg);
     background-color: darkorange; }
 
-/* line 56, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
+/* line 58, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
 .button_container span {
   background: white;
   border: none;
@@ -57,11 +57,11 @@
   transition: all 0.35s ease;
   cursor: pointer; }
 
-/* line 68, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
+/* line 70, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
 .button_container .middle {
   top: 1em; }
 
-/* line 72, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
+/* line 74, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
 .button_container .bottom {
   top: 2em; }
 
