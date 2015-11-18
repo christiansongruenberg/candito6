@@ -1,11 +1,33 @@
+.banner {
+    background-color: darkorange;
+    padding: 5px;
+    height: 6em;
+}
+
+.title {
+    margin: 0;
+    color: white;    
+    font-family: 'Nixie One', Cursive;
+    letter-spacing: 3px;
+    font-size: 3em;
+}
+
+.subtitle {
+    color: black;
+    margin: 0;
+    font-family: 'Nixie One', Cursive;
+    letter-spacing: 0px;
+    font-size: 1.3em;
+}
+
 $active-hamburger: darkorange;
 
 .button_container {
     position: absolute;
-    top: 15px;
-    right: 2%;
-    height: 27px;
-    width: 35px;
+    top: 1.5em;
+    right: 0;
+    height: 3em;
+    width: 3.5em;
     cursor: pointer;
     z-index: 200;
     transition: opacity .25s ease;
@@ -16,7 +38,7 @@ $active-hamburger: darkorange;
     
     &.activeButton {
         .top {
-            transform: translateY(11px) translateX(0) rotate(45deg);
+            transform: translateY(1em) translateX(0) rotate(45deg);
             background-color: $active-hamburger;
         }
         .middle {
@@ -24,7 +46,7 @@ $active-hamburger: darkorange;
         }
     
         .bottom {
-            transform: translateY(-11px) translateX(0) rotate(-45deg);
+            transform: translateY(-1em) translateX(0) rotate(-45deg);
             background-color: $active-hamburger;
         }
     }
@@ -34,7 +56,7 @@ $active-hamburger: darkorange;
 .button_container span {
     background: white;
     border: none;
-    height: 5px;
+    height: 0.5em;
     width: 100%;
     position: absolute;
     top: 0;
@@ -44,9 +66,9 @@ $active-hamburger: darkorange;
 }
 
 .button_container .middle {
-     top: 11px;
+     top: 1em;
  }
 
 .button_container .bottom{
-     top: 22px;
+     top: 2em;
  }

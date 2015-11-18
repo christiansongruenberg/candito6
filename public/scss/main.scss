@@ -1,46 +1,25 @@
 @import "navbar";
 @import "overlayMenu";
+@import "base";
+@import "input";
+@import "weeks";
+@import "highres";
+@import "programNav";
 
-html {
-    overflow-y: scroll;
-}
 
-.banner {
-    background-color: darkorange;
-    padding: 5px;
-    
-}
+
 
 .main-container {
     margin-top: 5px;
 }
-.title {
-    margin: 0;
-    color: white;    
-    font-family: 'Nixie One', Cursive;
-    letter-spacing: 3px;
-}
 
-.subtitle {
-    color: black;
-    margin: 0;
-    font-family: 'Nixie One', Cursive;
-    letter-spacing: 0px;
-}
+
+
 
 .greeting {
     font-family: 'Nixie One', Cursive;
 } 
 
-body, input, textarea {
-    font-family: 'Open Sans', sans-serif;
-}
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    /*color: white;
-    background-color: black;*/
-}
 
 .lift-input {
     /*display: inline-block;*/
@@ -62,7 +41,7 @@ h3 {
 
 #dateInput {
     box-sizing: border-box;
-    height: 24px;
+    height: 1.7em;
     font-family: sans-serif;
 }
 
@@ -104,46 +83,21 @@ td {
     padding: 0;
 }
 
-#nav-list{
-    list-style: none;
-    
-}
+
 
 ul {
     padding: 0;
     margin: 0;
 }
 
-#nav-list li {
-    width: 100%;
-/*    padding: 0px;*/
-    text-align: center;
-    color: white;
-/*    background: black;*/
-    margin-bottom: 5px;
-    font-family: 'Lato', sans-serif;
-}
 
-#nav-list .btn {
-    width: 100%;
-    border-radius: 0;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    background-color: white;
-    border: 0;
-    padding: 10px 0;
-    color: black;
-}
 
 .date-header {
     text-align: center;
     letter-spacing: 5px;
 }
 
-.weekTitle {
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-}
+
 
 .workoutContent {
     padding: 0;
@@ -168,6 +122,7 @@ hr {
 
 .badge {
     background-color: darkorange;
+    font-size: 1em;
 }
 
 .set-header {

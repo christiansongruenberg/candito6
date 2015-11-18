@@ -17,8 +17,8 @@ $peachy: #f69779;
     nav{
         position: relative;
         height: 70%;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 0%;
+        transform: translateY(25%);
         text-align:center;
     }
     
@@ -48,7 +48,7 @@ $peachy: #f69779;
             display: block;
             height: 25%;
             height: calc(100%/4);
-            min-height: 50px;
+            min-height: 100px;
             position: relative;
             opacity: 0;
             font-weight: bolder;

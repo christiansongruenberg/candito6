@@ -20,18 +20,8 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/navbar.css">
 
-    <!-- JS -->
-    <script src="/bower/moment/moment.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="bower/angular/angular.js"></script>
-    <script src="bower/angular-route/angular-route.js"></script><!-- load angular -->
 
-    <script src="js/controllers/mainCtrl.js"></script>
-    <script src="js/services/canditoService.js"></script>
-    <script src="js/directives/directives.js"></script>
-    <script src="js/app.js"></script>
 </head>
 
 <body ng-controller="parentController">
@@ -41,5 +31,19 @@
     <workout-buttons></workout-buttons>
     <div ng-view></div>
 </div>
+
+<!-- JS -->
+
+<script src="bower/moment/moment.js"></script>
+<script src="bower/jquery/dist/jquery.js"></script>
+<script src="bower/angular/angular.js"></script>
+<script src="bower/angular-route/angular-route.js"></script><!-- load angular -->
+
+<script src="js/controllers/mainCtrl.js"></script>
+<script src="js/services/canditoService.js"></script>
+<script src="js/directives/directives.js"></script>
+<script src="js/app.js"></script>
+<script src="bower/responsive-bootstrap-toolkit/dist/bootstrap-toolkit.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

@@ -9,9 +9,9 @@ angular.module('mainCtrl', [])
     $scope.saveUserData = function(){
         
         var userData = {
-            'benchPress' : $scope.lifts.benchPress,
-            'squat': $scope.lifts.squat,
-            'deadlift': $scope.lifts.deadlift,
+            'benchPress' : $scope.benchPress,
+            'squat': $scope.squat,
+            'deadlift': $scope.deadlift,
             'units' : $scope.units,
             'backEx1' : $scope.backEx1,
             'backEx2' : $scope.backEx2,
@@ -25,26 +25,38 @@ angular.module('mainCtrl', [])
     $scope.backEx1 = "Dumbbell Row";
     $scope.backEx2 = "Weighted Pull-up";
     $scope.shoulderEx = "Seated Dumbbell OHP";
-    
-    $log.log(canditoService.varTest);
+
     $scope.units = 'lbs';
-    $scope.lifts = {}
-    $http.get('/getUser').success(function(data){
-        $scope.name = data.name;
-        $scope.lifts.benchPress = canditoService.benchPress = data.benchPressMax;
-        $scope.lifts.deadlift = canditoService.deadlift = data.deadliftMax;
-        $scope.lifts.squat = canditoService.squat = data.squatMax;
-    });
+
     
-    $scope.$watch('lifts.benchPress', function(newVal, oldVal){
+    if(canditoService.benchPress && canditoService.deadlift && canditoService.squat){
+
+        $scope.benchPress = canditoService.benchPress;
+        $scope.deadlift = canditoService.deadlift;
+        $scope.squat = canditoService.squat;
+    }else{
+        $http.get('/getUser').success(function(data){
+            if(data){
+                $scope.name = data.name;
+                
+                $scope.lifts = {}
+                $scope.benchPress = canditoService.benchPress = data.benchPressMax;
+                $scope.deadlift = canditoService.deadlift = data.deadliftMax;
+                $scope.squat = canditoService.squat = data.squatMax;
+            }
+
+        });
+    }
+    
+    $scope.$watch('benchPress', function(newVal, oldVal){
        canditoService.benchPress = newVal; 
     });
     
-    $scope.$watch('lifts.deadlift', function(newVal, oldVal){
+    $scope.$watch('deadlift', function(newVal, oldVal){
        canditoService.deadlift = newVal; 
     });
     
-    $scope.$watch('lifts.squat', function(newVal, oldVal){
+    $scope.$watch('squat', function(newVal, oldVal){
        canditoService.squat = newVal; 
     });
     
@@ -100,9 +112,6 @@ angular.module('mainCtrl', [])
     $scope.backEx2 = canditoService.backEx2;
     $scope.shoulderEx = canditoService.shoulderEx;
     
-    $http.post("/updateUserInfo", {'benchPress': $scope.benchPress}).success(function(data,status){
-       $log.log("post succesful"); 
-    });
     //temporary variables for testing
     $scope.startingDate = new Date();
     /*$scope.benchPress = 100;

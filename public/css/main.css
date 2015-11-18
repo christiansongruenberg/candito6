@@ -1,33 +1,55 @@
-/* line 3, C:/xampp/htdocs/introToLaravel/public/scss/_navbar.scss */
+/* line 1, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
+.banner {
+  background-color: darkorange;
+  padding: 5px;
+  height: 6em; }
+
+/* line 7, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
+.title {
+  margin: 0;
+  color: white;
+  font-family: 'Nixie One', Cursive;
+  letter-spacing: 3px;
+  font-size: 3em; }
+
+/* line 15, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
+.subtitle {
+  color: black;
+  margin: 0;
+  font-family: 'Nixie One', Cursive;
+  letter-spacing: 0px;
+  font-size: 1.3em; }
+
+/* line 25, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
 .button_container {
   position: absolute;
-  top: 15px;
-  right: 2%;
-  height: 27px;
-  width: 35px;
+  top: 1.5em;
+  right: 0;
+  height: 3em;
+  width: 3.5em;
   cursor: pointer;
   z-index: 200;
   transition: opacity 0.25s ease; }
-  /* line 13, C:/xampp/htdocs/introToLaravel/public/scss/_navbar.scss */
+  /* line 35, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
   .button_container:hover {
     opacity: 0.7; }
-  /* line 18, C:/xampp/htdocs/introToLaravel/public/scss/_navbar.scss */
+  /* line 40, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
   .button_container.activeButton .top {
-    transform: translateY(11px) translateX(0) rotate(45deg);
+    transform: translateY(1em) translateX(0) rotate(45deg);
     background-color: darkorange; }
-  /* line 22, C:/xampp/htdocs/introToLaravel/public/scss/_navbar.scss */
+  /* line 44, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
   .button_container.activeButton .middle {
     opacity: 0; }
-  /* line 26, C:/xampp/htdocs/introToLaravel/public/scss/_navbar.scss */
+  /* line 48, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
   .button_container.activeButton .bottom {
-    transform: translateY(-11px) translateX(0) rotate(-45deg);
+    transform: translateY(-1em) translateX(0) rotate(-45deg);
     background-color: darkorange; }
 
-/* line 34, C:/xampp/htdocs/introToLaravel/public/scss/_navbar.scss */
+/* line 56, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
 .button_container span {
   background: white;
   border: none;
-  height: 5px;
+  height: 0.5em;
   width: 100%;
   position: absolute;
   top: 0;
@@ -35,15 +57,15 @@
   transition: all 0.35s ease;
   cursor: pointer; }
 
-/* line 46, C:/xampp/htdocs/introToLaravel/public/scss/_navbar.scss */
+/* line 68, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
 .button_container .middle {
-  top: 11px; }
+  top: 1em; }
 
-/* line 50, C:/xampp/htdocs/introToLaravel/public/scss/_navbar.scss */
+/* line 72, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
 .button_container .bottom {
-  top: 22px; }
+  top: 2em; }
 
-/* line 3, C:/xampp/htdocs/introToLaravel/public/scss/_overlayMenu.scss */
+/* line 3, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_overlayMenu.scss */
 #overlayMenu {
   position: fixed;
   top: 0;
@@ -57,19 +79,19 @@
   text-align: center;
   overflow: hidden;
   transition: opacity 0.35s, visibility 0.35s, height 1s; }
-  /* line 17, C:/xampp/htdocs/introToLaravel/public/scss/_overlayMenu.scss */
+  /* line 17, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_overlayMenu.scss */
   #overlayMenu nav {
     position: relative;
     height: 70%;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0%;
+    transform: translateY(25%);
     text-align: center; }
-  /* line 25, C:/xampp/htdocs/introToLaravel/public/scss/_overlayMenu.scss */
+  /* line 25, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_overlayMenu.scss */
   #overlayMenu.menuOpen {
     opacity: 0.95;
     visibility: visible;
     height: 100%; }
-    /* line 30, C:/xampp/htdocs/introToLaravel/public/scss/_overlayMenu.scss */
+    /* line 30, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_overlayMenu.scss */
     #overlayMenu.menuOpen li {
       padding-left: 8px;
       text-align: left;
@@ -80,29 +102,29 @@
       display: block;
       height: 25%;
       height: calc(100%/4);
-      min-height: 50px;
+      min-height: 100px;
       position: relative;
       opacity: 0;
       font-weight: bolder;
       font-size: 50px;
       color: #6B6B6B;
       letter-spacing: 5px; }
-      /* line 37, C:/xampp/htdocs/introToLaravel/public/scss/_overlayMenu.scss */
+      /* line 37, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_overlayMenu.scss */
       #overlayMenu.menuOpen li:nth-of-type(2) {
         animation-delay: .4s; }
-      /* line 41, C:/xampp/htdocs/introToLaravel/public/scss/_overlayMenu.scss */
+      /* line 41, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_overlayMenu.scss */
       #overlayMenu.menuOpen li:nth-of-type(3) {
         animation-delay: .45s; }
-      /* line 44, C:/xampp/htdocs/introToLaravel/public/scss/_overlayMenu.scss */
+      /* line 44, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_overlayMenu.scss */
       #overlayMenu.menuOpen li:nth-of-type(4) {
         animation-delay: .50s; }
-      /* line 60, C:/xampp/htdocs/introToLaravel/public/scss/_overlayMenu.scss */
+      /* line 60, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_overlayMenu.scss */
       #overlayMenu.menuOpen li:hover {
         color: whitesmoke;
         transition: .35s ease;
         border-top: 2px solid darkorange;
         cursor: pointer; }
-  /* line 69, C:/xampp/htdocs/introToLaravel/public/scss/_overlayMenu.scss */
+  /* line 69, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_overlayMenu.scss */
   #overlayMenu ul {
     list-style: none;
     padding: 0;
@@ -119,48 +141,103 @@
     opacity: 1;
     left: 0; } }
 
-/* line 4, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+/* line 1, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_base.scss */
 html {
   overflow-y: scroll; }
 
-/* line 8, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
-.banner {
-  background-color: darkorange;
-  padding: 5px; }
-
-/* line 14, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
-.main-container {
-  margin-top: 5px; }
-
-/* line 17, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
-.title {
-  margin: 0;
-  color: white;
-  font-family: 'Nixie One', Cursive;
-  letter-spacing: 3px; }
-
-/* line 24, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
-.subtitle {
-  color: black;
-  margin: 0;
-  font-family: 'Nixie One', Cursive;
-  letter-spacing: 0px; }
-
-/* line 31, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
-.greeting {
-  font-family: 'Nixie One', Cursive; }
-
-/* line 35, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+/* line 5, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_base.scss */
 body, input, textarea {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px; }
 
-/* line 39, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+/* line 10, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_base.scss */
 body {
   font-family: 'Open Sans', sans-serif;
   /*color: white;
     background-color: black;*/ }
 
-/* line 45, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+/* line 16, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_base.scss */
+.container, .container-fluid {
+  padding: 0; }
+
+/* line 1, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_input.scss */
+#input-header {
+  font-size: 1.5em; }
+
+/* line 5, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_input.scss */
+.radio-button {
+  width: 1.5em;
+  height: 1.5em;
+  background-color: darkorange; }
+
+/* line 11, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_input.scss */
+#save-button {
+  float: right; }
+
+/* line 1, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_weeks.scss */
+.weekTitle {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 2.5em; }
+
+/* Large desktops and laptops */
+/* Landscape tablets and medium desktops */
+/* Portrait tablets and small desktops */
+/* Landscape phones and portrait tablets */
+/* Portrait phones and smaller */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3) and (max-device-height: 7in), only screen and (-o-min-device-pixel-ratio: 13/10) and (max-device-height: 7in), only screen and (min-resolution: 120dpi) and (max-device-height: 7in) {
+  /* line 30, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_highres.scss */
+  body, input, textarea {
+    font-size: 35px; }
+  /* line 34, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_highres.scss */
+  body {
+    /*color: white;
+        background-color: black;*/ } }
+
+/*# sourceMappingURL=programNav.css.map */
+/* line 4, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_programNav.scss */
+#nav-list {
+  list-style: none; }
+  /* line 7, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_programNav.scss */
+  #nav-list li {
+    width: 100%;
+    /*    padding: 0px;*/
+    color: white;
+    /*    background: black;*/
+    margin-bottom: 0.3em;
+    font-family: 'Lato', sans-serif; }
+  /* line 18, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_programNav.scss */
+  #nav-list .btn {
+    width: 100%;
+    border-radius: 0;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background-color: #e3e3e3;
+    border: 0;
+    padding: 0.8em 0;
+    color: #3B3B3B;
+    font-size: 1em;
+    text-align: center; }
+
+/* line 38, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_programNav.scss */
+#program-header {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #4b4b4b;
+  font-size: 1.2em;
+  color: white;
+  cursor: pointer;
+  line-height: 2.2em; }
+
+/* line 12, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
+.main-container {
+  margin-top: 5px; }
+
+/* line 19, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
+.greeting {
+  font-family: 'Nixie One', Cursive; }
+
+/* line 24, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .lift-input {
   /*display: inline-block;*/
   padding: 0px;
@@ -169,127 +246,98 @@ body {
   transition: border 0.3s;
   /*    text-align: center;*/ }
 
-/* line 54, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+/* line 33, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .lift-input:focus, lift-input.focus {
   border-bottom: solid 1px orange;
   outline: none; }
 
-/* line 59, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+/* line 38, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 h3 {
   text-align: center; }
 
-/* line 63, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+/* line 42, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 #dateInput {
   box-sizing: border-box;
-  height: 24px;
+  height: 1.7em;
   font-family: sans-serif; }
 
-/* line 69, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+/* line 48, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 table {
   margin: auto; }
 
-/* line 74, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+/* line 53, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .input-description {
   text-align: right;
   text-transform: uppercase; }
 
-/* line 80, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+/* line 59, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .input-column {
   text-align: center; }
 
-/* line 84, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+/* line 63, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .input-column select, .input-column #dateInput {
   width: 100%; }
 
-/* line 88, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+/* line 67, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 td {
   padding: 6px;
   text-align: center; }
 
-/* line 93, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+/* line 72, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .unitsSpan {
   display: inline-block;
   float: right;
   position: absolute; }
 
-/* line 99, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+/* line 78, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .main-content {
   padding: 0; }
 
-/* line 103, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+/* line 82, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .nav-div {
   padding: 0; }
 
-/* line 107, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
-#nav-list {
-  list-style: none; }
-
-/* line 112, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+/* line 88, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 ul {
   padding: 0;
   margin: 0; }
 
-/* line 117, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
-#nav-list li {
-  width: 100%;
-  /*    padding: 0px;*/
-  text-align: center;
-  color: white;
-  /*    background: black;*/
-  margin-bottom: 5px;
-  font-family: 'Lato', sans-serif; }
-
-/* line 127, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
-#nav-list .btn {
-  width: 100%;
-  border-radius: 0;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  background-color: white;
-  border: 0;
-  padding: 10px 0;
-  color: black; }
-
-/* line 138, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+/* line 95, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .date-header {
   text-align: center;
   letter-spacing: 5px; }
 
-/* line 143, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
-.weekTitle {
-  text-align: center;
-  font-family: 'Lato', sans-serif; }
-
-/* line 148, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+/* line 102, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .workoutContent {
   padding: 0;
   border-left: 1px solid transparent; }
 
-/* line 154, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+/* line 108, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .workout-table td {
   padding: 10px; }
 
-/* line 158, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+/* line 112, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .workoutCell {
   font-weight: bold;
   text-align: right; }
 
-/* line 163, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+/* line 117, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 hr {
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(255, 140, 0, 0), rgba(255, 140, 0, 0.75), rgba(255, 140, 0, 0)); }
 
-/* line 169, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+/* line 123, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .badge {
-  background-color: darkorange; }
+  background-color: darkorange;
+  font-size: 1em; }
 
-/* line 173, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+/* line 128, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .set-header {
   font-weight: bold;
   text-align: center; }
 
-/* line 178, C:/xampp/htdocs/introToLaravel/public/scss/main.scss */
+/* line 133, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .navHR {
   margin: 0;
   padding: 0;

@@ -17,6 +17,8 @@
     "angular": "~1.4.7",
     "angular-route": "~1.4.7",
     "bootstrap": "~3.3.5",
-    "moment": "~2.10.6"
+    "jquery": "~2.1.4",
+    "moment": "~2.10.6",
+    "responsive-bootstrap-toolkit": "responsive-toolkit#~2.5.1"
   }
 }
