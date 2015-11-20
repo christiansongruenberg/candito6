@@ -1,0 +1,52 @@
+<div id="login-menu" class="collapse">
+   <div class="container">
+      <div class="fixed-div">
+          <i data-toggle="collapse" data-target="#login-menu" class="fa fa-times"></i>
+           <form id="login-form" ng-hide="name" ng-submit="signIn()"> 
+               <table>                
+                    <tr>
+                        <td>
+                            <h3>Log In</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">Email:</label><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input ng-model="email" id="email" type="email" name="email"><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">Password:</label><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input ng-model="password" id="password" type="password" name="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p ng-if="loginErrorMessage">{{loginErrorMessage}}</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label id="remember-me"><input type="checkbox" checked> Remember me </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="btn btn-success" style="border-radius: 0" type="submit" value="Login">
+                            <input class="btn btn-primary" style="border-radius: 0" type="button" value="Sign Up">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+      </div>
+   </div>
+</div>

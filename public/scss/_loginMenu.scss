@@ -1,0 +1,77 @@
+#login-menu {
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 18em;
+    width: 100%;
+    z-index: 300;
+    background-color: darkorange;
+    text-align: center; 
+//    visibility: hidden;
+    
+    #login-menu {
+        color: white;
+    }
+    
+    
+    label {
+        color: white;
+        font-weight: normal;
+        font-size: 1.5em;
+        text-transform: uppercase;
+    }
+    
+    h3 {
+        font-size: 2em;
+        text-transform: uppercase;
+    }
+    tr,td {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
+    
+    .btn{
+        margin-top: 0.5em;
+        background-color: #3b3b3b;
+        border: 0;
+        font-size: 1em;
+        text-transform: uppercase;
+        
+        &:hover {
+            background-color: black;
+        }
+    }
+    
+    input[type="checkbox"]{
+        height: 1em;
+        width: 1em;
+        margin-top: 0.5em;
+    }
+    #remember-me{
+        font-size: 0.8em;
+        font-weight: bold;
+        color: black;
+        text-transform: none;
+    }
+    
+    .fa-times{
+        position: absolute;
+        font-size: 2em;
+        right: 0.5em;
+        top: 0.5em;
+        transition: color 0.3s;
+        
+        &:hover {
+            color: white;
+        }
+    }
+    
+    .fixed-div{
+        width: 100%;
+        position:relative;
+        top:0;
+        left:0;
+    }
+}
