@@ -3,10 +3,13 @@
         <div style="position: relative" class="header">
             <h1 class="title">Candito</h1>
             <h4 class="subtitle">6 Week Strength Program</h4>
-            <div ng-class="{activeButton: menuActive}" ng-click="menuClick()" class="button_container" id="toggle">
-                <span class="top"></span>
-                <span class="middle"></span>
-                <span class="bottom"></span>
+            <div class="header-buttons">
+                <button class="btn login-button" data-toggle="collapse" data-target="#login-menu">Login</button>
+                <div ng-class="{activeButton: menuActive}" ng-click="menuClick()" class="button_container" id="toggle">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </div>
             </div>
         </div>
     </div>

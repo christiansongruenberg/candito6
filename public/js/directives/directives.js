@@ -17,4 +17,9 @@ angular.module('canditoDirectives', [])
     return {
         templateUrl: 'html/customDirectives/overlayMenu.html'
     }
-});;
+})
+.directive('loginMenu', function(){
+    return {
+        templateUrl: 'html/customDirectives/loginMenu.html'
+    }
+});

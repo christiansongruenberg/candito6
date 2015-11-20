@@ -15,7 +15,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css"> <!-- load bootstrap via cdn -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <link href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'> <!-- load fontawesome -->
     <link href='https://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:400' rel='stylesheet' type='text/css'>
@@ -26,6 +26,7 @@
 
 <body ng-controller="parentController">
 <overlay-menu></overlay-menu>
+<login-menu></login-menu>
 <header-bar></header-bar>
 <div class="container main-container">
     <workout-buttons></workout-buttons>
@@ -39,6 +40,7 @@
 <script src="/bower/bootstrap/dist/js/bootstrap.js"></script>
 <script src="bower/angular/angular.js"></script>
 <script src="bower/angular-route/angular-route.js"></script><!-- load angular -->
+<script src="/bower/angular-animate/angular-animate.js"></script>
 
 <script src="bower/responsive-bootstrap-toolkit/dist/bootstrap-toolkit.js"></script>
 <script src="js/controllers/mainCtrl.js"></script>

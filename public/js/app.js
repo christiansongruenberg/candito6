@@ -1,7 +1,7 @@
 /**
  * Created by Christianson on 27/10/2015.
  */
-var canditoApp = angular.module('canditoApp', ['mainCtrl','ngRoute', 'canditoService', 'canditoDirectives']);
+var canditoApp = angular.module('canditoApp', ['mainCtrl','ngRoute', 'canditoService', 'canditoDirectives', 'ngAnimate']);
 
 canditoApp.config(function($routeProvider){
     $routeProvider

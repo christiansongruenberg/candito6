@@ -5,6 +5,7 @@
 @import "weeks";
 @import "highres";
 @import "programNav";
+@import "loginMenu";
 
 
 
@@ -69,11 +70,7 @@ td {
     text-align: center;
 }
 
-.unitsSpan {
-    display: inline-block;
-    float:right;
-    position: absolute;
-}
+
 
 .main-content {
     padding: 0;
@@ -92,10 +89,7 @@ ul {
 
 
 
-.date-header {
-    text-align: center;
-    letter-spacing: 5px;
-}
+
 
 
 
@@ -122,7 +116,7 @@ hr {
 
 .badge {
     background-color: darkorange;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 .set-header {
