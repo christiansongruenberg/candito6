@@ -5,12 +5,36 @@ var canditoApp = angular.module('canditoApp', ['mainCtrl','ngRoute', 'canditoSer
 
 canditoApp.config(function($routeProvider){
     $routeProvider
+        .when('/overview', {
+            templateUrl: 'html/overview.html',
+            controller: 'weekController'
+        })
         .when('/', {
             templateUrl: 'html/main.html',
             controller: 'mainController'
         })
         .when('/week1', {
             templateUrl: 'html/week1.html',
+            controller: 'weekController'
+        })
+        .when('/week2', {
+            templateUrl: 'html/week2.html',
+            controller: 'weekController'
+        })
+        .when('/week3', {
+            templateUrl: 'html/week3.html',
+            controller: 'weekController'
+        })
+        .when('/week4', {
+            templateUrl: 'html/week4.html',
+            controller: 'weekController'
+        })
+        .when('/week5', {
+            templateUrl: 'html/week5.html',
+            controller: 'weekController'
+        })
+        .when('/week6', {
+            templateUrl: 'html/week6.html',
             controller: 'weekController'
         });
 });

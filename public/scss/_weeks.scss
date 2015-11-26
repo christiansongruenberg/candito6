@@ -1,7 +1,7 @@
 .weekTitle {
     text-align: center;
     font-family: 'Lato', sans-serif;
-    font-size: 2em;
+    font-size: 1.7em;
 }
 
 .date-header {
@@ -31,5 +31,59 @@
         td:first-child{
             background-color: white;
         }
+    }
+    
+    .cell-text{
+        overflow: hidden;
+        max-width: 30em;
+        text-align: left;
+        font-size: 0.9em;
+    }
+    
+}
+
+#week-6{
+    padding-left: 1em;
+    padding-right: 1em;
+    
+    .panel-heading{
+        border-radius:0;
+//        background-color: rgba(255, 140, 0, 0.2);
+        background-color: #3b3b3b;
+        height: 2.45em;
+        transition: background-color 0.3s;
+        .panel-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: white;
+            transition: color 0.3s;
+        }
+        
+        &:hover {
+            background-color: rgba(255, 140, 0, 0.4);
+            
+            .panel-title {
+                color: #3b3b3b;
+            }
+        }
+    }
+    
+    
+    .panel{
+        border-radius: 0;
+        
+        a:hover{
+            text-decoration:none;  
+        }
+    }
+    
+    h2 {
+        text-align: center;
+    }
+}
+
+#w2d3{
+    ul#backoff-squats li{
+        list-style: disc;
     }
 }

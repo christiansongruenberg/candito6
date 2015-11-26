@@ -9,7 +9,11 @@ angular.module('canditoService', [])
         
         return function(value, percentage){
             var percentage = percentage/100;
-            return Math.round((value*percentage)/roundTo)*roundTo;
+            if(value){
+                return Math.round((value*percentage)/roundTo)*roundTo;
+            }else{
+                return percentage*100 + "%";
+            }
         }
     }
     
@@ -17,5 +21,14 @@ angular.module('canditoService', [])
         startingDate = moment(startingDate);
         startingDate.add(days, 'd');
         return startingDate.toDate();
+    }
+    
+    this.new1RM = function(weight, multiplier){
+        if(weight > 0 && multiplier > 0){
+            return Math.round(weight*multiplier);
+        }else{
+           return " "; 
+        }
+        
     }
 });

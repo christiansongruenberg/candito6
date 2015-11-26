@@ -1,7 +1,7 @@
-<div id="login-menu" class="collapse">
+<div ng-class="{loginMenuActive: loginMenuActive}" id="login-menu">
    <div class="container">
       <div class="fixed-div">
-          <i data-toggle="collapse" data-target="#login-menu" class="fa fa-times"></i>
+          <i ng-click="loginButtonClick()" class="fa fa-times"></i>
            <form id="login-form" ng-hide="name" ng-submit="signIn()"> 
                <table>                
                     <tr>

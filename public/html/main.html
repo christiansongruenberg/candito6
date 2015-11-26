@@ -8,31 +8,31 @@
    <table id="input-table">
         <tr>
             <td class="input-description">Starting Date:</td>
-            <td class="input-column"><input placeholder="dd/mm/yyy" id="dateInput" type="date" min="2015-01-01" max="2020-12-31"></td>
+            <td class="input-column"><input placeholder="dd/mm/yyy" id="dateInput" type="date" min="2015-01-01" max="2020-12-31" ng-model="$parent.startingDate"></td>
         </tr>
         <tr>
             <td class="input-description">Weight System:</td>
             <td class="input-column">
-                <label>lbs <input class="radio-button" ng-model="units" type="radio" name="units" value="lbs"></label> 
-                <label>kgs <input class="radio-button" ng-model="units" type="radio" name="units" value="kgs"></label>
+                <label>lbs <input class="radio-button" ng-model="$parent.units" type="radio" name="units" value="lbs"></label> 
+                <label>kgs <input class="radio-button" ng-model="$parent.units" type="radio" name="units" value="kgs"></label>
             </td>
         </tr>
         <tr>
             <td class="input-description">Bench Press:</td>
-            <td style="position: relative" class="input-column"><input class="lift-input" type="text" ng-model="benchPress"><span ng-bind="units" class="unitsSpan"></span></td>
+            <td style="position: relative" class="input-column"><input class="lift-input" type="text" ng-model="$parent.benchPress"><span ng-bind="units" class="unitsSpan"></span></td>
         </tr>
         <tr>
             <td class="input-description">Squat:</td>
-            <td style="position: relative" class="input-column"><input class="lift-input" type="text" ng-model="squat"><span ng-bind="units" class="unitsSpan"></span></td>
+            <td style="position: relative" class="input-column"><input class="lift-input" type="text" ng-model="$parent.squat"><span ng-bind="units" class="unitsSpan"></span></td>
         </tr>
         <tr>
             <td class="input-description">Deadlift:</td>
-            <td style="position: relative" class="input-column"><input class="lift-input" type="text" ng-model="deadlift"><span ng-bind="units" class="unitsSpan"></span></td>
+            <td style="position: relative" class="input-column"><input class="lift-input" type="text" ng-model="$parent.deadlift"><span ng-bind="units" class="unitsSpan"></span></td>
         </tr>
         <tr>
             <td class="input-description">Upper Back Exercise #1: </td>
             <td class="input-column">
-                <select ng-model="backEx1" name="" id="">
+                <select ng-model="$parent.backEx1" name="" id="">
                     <option value="Dumbbell Row">Dumbbell Row</option>
                     <option value="Barbell Row">Barbell Row</option>
                     <option value="Machine Row">Machine Row</option>
@@ -42,7 +42,7 @@
         <tr>
             <td class="input-description">Shoulder Exercise:</td>
             <td class="input-column">
-                <select ng-model="shoulderEx" name="" id="">
+                <select ng-model="$parent.shoulderEx" name="" id="">
                     <option value="Seated Dumbbell OHP">Seated Dumbbell OHP</option>
                     <option value="Standing Dumbbell OHP">Standing Dumbbell OHP</option>        
                     <option value="Military Press">Military Press</option>
@@ -53,7 +53,7 @@
         <tr>
             <td class="input-description">Upper Back Exercise #1: </td>
             <td class="input-column">
-                <select ng-model="backEx2" name="" id="">
+                <select ng-model="$parent.backEx2" name="" id="">
                     <option value="Weighted Pull-up">Weighted Pull-up</option>
                     <option value="Weighted Chin-up">Weighted Chin-up</option>
                     <option value="Lat Pulldown">Lat Pulldown</option>

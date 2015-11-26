@@ -1,0 +1,95 @@
+
+<div class="workoutContent col-md-10 col-xs-12" id="week-6">   
+   <h1 class="weekTitle">Week 6 - Three Options</h1>
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+        
+        <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse1">
+            <div class="panel-heading">
+                <h4 class="panel-title">Option 1</h4>
+            </div>
+        </a>
+        <div id="collapse1" class="panel-collapse collapse in">
+          <div class="panel-body">Skip Week 6.  Just use projected one rep max from last week's 1-4 rep set.  Start next cycle.</div>
+        </div>
+      </div>
+      
+<div class="panel panel-default">
+
+        <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse2">
+            <div class="panel-heading">
+                <h4 class="panel-title">Option 2</h4>
+            </div>
+        </a>
+          
+        
+        <div id="collapse2" class="panel-collapse collapse">
+          <div class="panel-body">Use projected max for next cycle, but take a deload week (repeat week 1 but skip last upper workout).</div>
+        </div>
+      </div>
+      
+      <div class="panel panel-default">
+
+        <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse3">
+            <div class="panel-heading">
+                <h4 class="panel-title">Option 3</h4>
+            </div>
+        </a>
+
+        <div id="collapse3" class="panel-collapse collapse">
+          <div class="panel-body">Take this 6th week to actually find your 1 rep max.  Then either deload or start new cycle.</div>
+        </div>
+      </div>
+    </div>
+    <h2>Calculating Projected Max</h2>
+    <p>Take what you lifted in week 5, and multiply by 1.03 if you completed 2 reps, 1.06 if 3 reps, and 1.09 if 4. Or use calculator below </p>
+    <table class="table">
+        <tr>
+            <td>Lift</td>
+            <td>Weight Lifted</td>
+            <td>Reps Done</td>    
+            <td>New 1 Rep Max</td>
+        </tr>
+        <tr>
+            <td>Bench Press</td>
+            <td><input ng-model="weightCalcBench" type="number"></td>
+            <td>
+                <select ng-model="repsCalcBench" name="" id="">
+                    <option value="1">1</option>
+                    <option value="1.03">2</option>
+                    <option value="1.06">3</option>
+                    <option value="1.09">4</option>
+                </select>
+                
+            </td>
+            <td>{{new1RM(weightCalcBench, repsCalcBench)}}</td>
+        </tr>
+        <tr>
+            <td>Squat</td>
+            <td><input ng-model="weightCalcSquat" type="number"></td>
+            <td>
+                <select ng-model="repsCalcSquat" name="" id="">
+                    <option value="1">1</option>
+                    <option value="1.03">2</option>
+                    <option value="1.06">3</option>
+                    <option value="1.09">4</option>
+                </select>
+            </td>
+            <td>{{new1RM(weightCalcSquat,repsCalcSquat)}}</td>
+        </tr>
+        <tr>
+           <td>Deadlift</td>
+            <td><input ng-model="weightCalcDeadlift" type="number"></td>
+            <td>
+                <select ng-model="repsCalcDeadlift" name="" id="">
+                    <option value="1">1</option>
+                    <option value="1.03">2</option>
+                    <option value="1.06">3</option>
+                    <option value="1.09">4</option>
+                </select>
+            </td>
+            <td>{{new1RM(weightCalcDeadlift,repsCalcDeadlift)}}</td>
+        </tr>
+    </table>
+    
+</div>

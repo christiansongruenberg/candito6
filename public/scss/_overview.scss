@@ -1,0 +1,48 @@
+#overview {
+    padding-left: 1em;
+    padding-right: 1em;
+    h1{
+        text-align: center;
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.6em;
+    }
+    
+    h3{
+        margin-top: 0;
+        font-size: 1.3em;
+    }
+    
+    h4{
+        font-weight: bold;
+        font-size: 1em;
+    }
+    h5.update{
+        font-size: 1em;
+        text-align: center;
+    }
+    
+    p{
+        text-align: justify;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    .note{
+        font-style: italic;
+        font-size: 0.9em;
+    }
+    
+    .numbered-list{    
+        li{
+            margin-left: 1.4em;
+            list-style: decimal;
+        }
+    } 
+    
+    
+}

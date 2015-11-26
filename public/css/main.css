@@ -74,15 +74,19 @@
   /* line 84, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
   .header-buttons .login-button {
     position: absolute;
-    height: 2.6em;
+    height: 3.95em;
     right: 5em;
-    top: 1.1em;
+    top: -0.3em;
     z-index: 100;
-    border-radius: 0;
+    border-radius: 0em;
     background-color: #3b3b3b;
     color: white;
     font-size: 1em;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    transition: background-color 0.3s; }
+    /* line 96, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_navbar.scss */
+    .header-buttons .login-button:hover {
+      background-color: #9b9b9b; }
 
 /* line 3, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_overlayMenu.scss */
 #overlayMenu {
@@ -166,7 +170,7 @@ html {
 /* line 5, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_base.scss */
 body, input, textarea {
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px; }
+  font-size: 18px; }
 
 /* line 10, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_base.scss */
 body {
@@ -206,14 +210,14 @@ body {
 
 /* line 27, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_input.scss */
 .unitsSpan {
-  display: inline-block;
-  position: absolute; }
+  position: absolute;
+  right: 1em; }
 
 /* line 1, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_weeks.scss */
 .weekTitle {
   text-align: center;
   font-family: 'Lato', sans-serif;
-  font-size: 2em; }
+  font-size: 1.7em; }
 
 /* line 7, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_weeks.scss */
 .date-header {
@@ -232,6 +236,49 @@ body {
 /* line 31, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_weeks.scss */
 .workout-table tr td:first-child {
   background-color: white; }
+
+/* line 36, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_weeks.scss */
+.workout-table .cell-text {
+  overflow: hidden;
+  max-width: 30em;
+  text-align: left;
+  font-size: 0.9em; }
+
+/* line 45, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_weeks.scss */
+#week-6 {
+  padding-left: 1em;
+  padding-right: 1em; }
+  /* line 49, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_weeks.scss */
+  #week-6 .panel-heading {
+    border-radius: 0;
+    background-color: #3b3b3b;
+    height: 2.45em;
+    transition: background-color 0.3s; }
+    /* line 55, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_weeks.scss */
+    #week-6 .panel-heading .panel-title {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: white;
+      transition: color 0.3s; }
+    /* line 62, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_weeks.scss */
+    #week-6 .panel-heading:hover {
+      background-color: rgba(255, 140, 0, 0.4); }
+      /* line 65, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_weeks.scss */
+      #week-6 .panel-heading:hover .panel-title {
+        color: #3b3b3b; }
+  /* line 72, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_weeks.scss */
+  #week-6 .panel {
+    border-radius: 0; }
+    /* line 75, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_weeks.scss */
+    #week-6 .panel a:hover {
+      text-decoration: none; }
+  /* line 80, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_weeks.scss */
+  #week-6 h2 {
+    text-align: center; }
+
+/* line 86, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_weeks.scss */
+#w2d3 ul#backoff-squats li {
+  list-style: disc; }
 
 /* Large desktops and laptops */
 /* Landscape tablets and medium desktops */
@@ -320,76 +367,136 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  height: 18em;
+  height: 0;
   width: 100%;
   z-index: 300;
   background-color: darkorange;
-  text-align: center; }
-  /* line 13, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_loginMenu.scss */
+  text-align: center;
+  visibility: hidden;
+  transition: height 0.3s;
+  animation-delay: 2s; }
+  /* line 16, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_loginMenu.scss */
+  #login-menu.loginMenuActive {
+    visibility: visible;
+    height: 18em;
+    transition: height 0.3s; }
+    /* line 21, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_loginMenu.scss */
+    #login-menu.loginMenuActive .fixed-div {
+      animation: fadeIn 0.3s ease forwards;
+      animation-delay: 0.2s; }
+  /* line 28, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_loginMenu.scss */
   #login-menu #login-menu {
     color: white; }
-  /* line 18, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_loginMenu.scss */
+  /* line 33, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_loginMenu.scss */
   #login-menu label {
     color: white;
     font-weight: normal;
     font-size: 1.5em;
     text-transform: uppercase; }
-  /* line 25, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_loginMenu.scss */
+  /* line 40, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_loginMenu.scss */
   #login-menu h3 {
     font-size: 2em;
     text-transform: uppercase; }
-  /* line 29, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_loginMenu.scss */
+  /* line 44, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_loginMenu.scss */
   #login-menu tr, #login-menu td {
     margin: 0;
     padding: 0;
     text-align: left; }
-  /* line 35, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_loginMenu.scss */
+  /* line 50, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_loginMenu.scss */
   #login-menu .btn {
     margin-top: 0.5em;
     background-color: #3b3b3b;
     border: 0;
     font-size: 1em;
     text-transform: uppercase; }
-    /* line 42, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_loginMenu.scss */
+    /* line 57, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_loginMenu.scss */
     #login-menu .btn:hover {
       background-color: black; }
-  /* line 47, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_loginMenu.scss */
+  /* line 62, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_loginMenu.scss */
   #login-menu input[type="checkbox"] {
     height: 1em;
     width: 1em;
     margin-top: 0.5em; }
-  /* line 52, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_loginMenu.scss */
+  /* line 67, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_loginMenu.scss */
   #login-menu #remember-me {
     font-size: 0.8em;
     font-weight: bold;
     color: black;
     text-transform: none; }
-  /* line 59, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_loginMenu.scss */
+  /* line 74, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_loginMenu.scss */
   #login-menu .fa-times {
     position: absolute;
     font-size: 2em;
     right: 0.5em;
     top: 0.5em;
     transition: color 0.3s; }
-    /* line 66, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_loginMenu.scss */
+    /* line 81, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_loginMenu.scss */
     #login-menu .fa-times:hover {
       color: white; }
-  /* line 71, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_loginMenu.scss */
+  /* line 86, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_loginMenu.scss */
   #login-menu .fixed-div {
     width: 100%;
     position: relative;
     top: 0;
-    left: 0; }
+    left: 0;
+    visibility: hidden;
+    transition: visiblity -1s; }
 
-/* line 13, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    left: 0;
+    visibility: visible; } }
+
+/* line 1, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_overview.scss */
+#overview {
+  padding-left: 1em;
+  padding-right: 1em; }
+  /* line 4, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_overview.scss */
+  #overview h1 {
+    text-align: center;
+    font-size: 2em; }
+  /* line 9, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_overview.scss */
+  #overview h2 {
+    font-size: 1.6em; }
+  /* line 13, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_overview.scss */
+  #overview h3 {
+    margin-top: 0;
+    font-size: 1.3em; }
+  /* line 18, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_overview.scss */
+  #overview h4 {
+    font-weight: bold;
+    font-size: 1em; }
+  /* line 22, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_overview.scss */
+  #overview h5.update {
+    font-size: 1em;
+    text-align: center; }
+  /* line 27, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_overview.scss */
+  #overview p {
+    text-align: justify; }
+  /* line 31, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_overview.scss */
+  #overview li {
+    list-style: none; }
+  /* line 35, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_overview.scss */
+  #overview .note {
+    font-style: italic;
+    font-size: 0.9em; }
+  /* line 41, C:/Users/Christianson/WebstormProjects/candito6/public/scss/_overview.scss */
+  #overview .numbered-list li {
+    margin-left: 1.4em;
+    list-style: decimal; }
+
+/* line 14, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .main-container {
   margin-top: 5px; }
 
-/* line 20, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
+/* line 21, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .greeting {
   font-family: 'Nixie One', Cursive; }
 
-/* line 25, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
+/* line 26, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .lift-input {
   /*display: inline-block;*/
   padding: 0px;
@@ -398,87 +505,87 @@ body {
   transition: border 0.3s;
   /*    text-align: center;*/ }
 
-/* line 34, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
+/* line 35, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .lift-input:focus {
   border-bottom: solid 1px orange;
   outline: none; }
 
-/* line 39, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
+/* line 40, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 h3 {
   text-align: center; }
 
-/* line 43, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
+/* line 44, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 #dateInput {
   box-sizing: border-box;
   height: 1.7em;
   font-family: sans-serif; }
 
-/* line 49, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
+/* line 50, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 table {
   margin: auto; }
 
-/* line 54, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
+/* line 55, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .input-description {
   text-align: right;
   text-transform: uppercase; }
 
-/* line 60, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
+/* line 61, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .input-column {
   text-align: center; }
 
-/* line 64, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
+/* line 65, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .input-column select, .input-column #dateInput {
   width: 100%; }
 
-/* line 68, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
+/* line 69, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 td {
   padding: 6px;
   text-align: center; }
 
-/* line 75, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
+/* line 76, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .main-content {
   padding: 0; }
 
-/* line 79, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
+/* line 80, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .nav-div {
   padding: 0; }
 
-/* line 85, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
+/* line 86, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 ul {
   padding: 0;
   margin: 0; }
 
-/* line 96, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
+/* line 97, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .workoutContent {
   padding: 0;
   border-left: 1px solid transparent; }
 
-/* line 102, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
+/* line 103, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .workout-table td {
   padding: 10px; }
 
-/* line 106, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
+/* line 107, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .workoutCell {
   font-weight: bold;
   text-align: right; }
 
-/* line 111, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
+/* line 112, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 hr {
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(255, 140, 0, 0), rgba(255, 140, 0, 0.75), rgba(255, 140, 0, 0)); }
 
-/* line 117, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
+/* line 118, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .badge {
   background-color: darkorange;
   font-size: 0.8em; }
 
-/* line 122, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
+/* line 123, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .set-header {
   font-weight: bold;
   text-align: center; }
 
-/* line 127, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
+/* line 128, C:/Users/Christianson/WebstormProjects/candito6/public/scss/main.scss */
 .navHR {
   margin: 0;
   padding: 0;

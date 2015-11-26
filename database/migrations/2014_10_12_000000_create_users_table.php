@@ -25,6 +25,7 @@ class CreateUsersTable extends Migration
             $table->string('backEx1');
             $table->string('backEx2');
             $table->string('shoulderEx');
+            $table->date('startingDate');
             $table->rememberToken();
             $table->timestamps();
         });

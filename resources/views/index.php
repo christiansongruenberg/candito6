@@ -11,7 +11,7 @@
 <html lang="en" ng-app="canditoApp">
 <head>
     <meta charset="UTF-8">
-    <title>Candito Program</title>
+    <title>Candito 6 Week Strength Program</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css"> <!-- load bootstrap via cdn -->
@@ -41,6 +41,7 @@
 <script src="bower/angular/angular.js"></script>
 <script src="bower/angular-route/angular-route.js"></script><!-- load angular -->
 <script src="/bower/angular-animate/angular-animate.js"></script>
+<!--<script type="text/javascript" src="https://rawgit.com/betsol/angular-input-date/master/src/angular-input-date.js"></script>-->
 
 <script src="bower/responsive-bootstrap-toolkit/dist/bootstrap-toolkit.js"></script>
 <script src="js/controllers/mainCtrl.js"></script>

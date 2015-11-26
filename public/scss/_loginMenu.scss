@@ -3,12 +3,27 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 18em;
+    height: 0;
     width: 100%;
     z-index: 300;
     background-color: darkorange;
     text-align: center; 
-//    visibility: hidden;
+    visibility: hidden;
+    transition: height 0.3s;
+    animation-delay: 2s;
+    
+    
+    &.loginMenuActive{
+        visibility:visible;
+        height: 18em;
+        transition: height 0.3s;
+        
+        .fixed-div{
+            
+            animation:fadeIn .3s ease forwards;
+            animation-delay: 0.2s;
+        }
+    }
     
     #login-menu {
         color: white;
@@ -73,5 +88,19 @@
         position:relative;
         top:0;
         left:0;
+        visibility: hidden;
+        transition: visiblity -1s;
     }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+//    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+    visibility: visible;
+  }
 }

@@ -27,8 +27,10 @@ class MainController extends BaseController
 
     public function updateUserInfo(Request $request){
         $input = $request->all();
-        $value = $input['benchPress'];
-        dd($input['benchPress']);
+        $user = $request->user();
+        $user->update($input);
+
+        return response()->json($input);
     }
 
     public function showAbout(){
